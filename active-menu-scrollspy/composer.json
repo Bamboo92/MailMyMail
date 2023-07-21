@@ -1,0 +1,16 @@
+{
+  "name": "twg-group/jquery.scroll-spy",
+  "description": "Simple jquery scroll spy plugin",
+  "keywords": [
+    "scrollSpy"
+  ],
+  "homepage": "https://github.com/twg-group/jquery.scroll-spy",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matvey Alekseev",
+      "email": "mat@twg.su"
+    }
+  ],
+  "version": "1.0"
+}

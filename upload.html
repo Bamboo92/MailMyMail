@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Upload</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -37,70 +37,75 @@
         
         </div>
         <form action="#">
-        <div class="form-row">
-            <div class="input-data">
-                <input type="text" required>
-                <div class="underline"></div>
-                <label for="">Sender</label>
+            <div class="form-row">
+                <div class="input-data left-field">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Sender</label>
+                </div>
+                <div class="input-data right-field">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Recipient</label>
+                </div>
             </div>
-            <div class="input-data">
-                <input type="text" required>
-                <div class="underline"></div>
-                <label for="">Recipient</label>
+            <div class="form-row autocomplete-container" id="autocomplete-container">
+                <div class="input-data left-field">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Address</label>
+                </div>
+                <div class="input-data right-field">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Address</label>
+                </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="input-data">
-                <input type="text" required>
-                <div class="underline"></div>
-                <label for="">Address</label>
+            <div class="form-row">
+                <div class="input-data left-field">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Additional address information </label>
+                </div>
+                <div class="input-data right-field">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Additional address information</label>
+                </div>
             </div>
-            <div class="input-data">
-                <input type="text" required>
-                <div class="underline"></div>
-                <label for="">Address</label>
+            <div class="form-row">
+                <div class="input-data left-field email">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-data right-field">
+                </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="input-data">
-                <input type="text" required>
-                <div class="underline"></div>
-                <label for="">Additional address information </label>
-            </div>
-            <div class="input-data">
-                <input type="text" required>
-                <div class="underline"></div>
-                <label for="">Additional address information</label>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="input-data">
-                <input type="text" required>
-                <div class="underline"></div>
-                <label for="">Email</label>
             <div class="form-row submit-btn">
                 <div class="input-data">
                 <div class="inner"></div>
                 <input type="submit" value="submit">
-                </div>
-            </div> 
+            </div>
         </form>
     </div>
 
 </section>
 
-<script src="script.js"></script>      
-</body>  
+<script src="script.js"></script>
+<script src="/js/adressAutocomplete.js"></script>      
 
 <footer>
-<div class="footer-content">
-    <p>&copy; 2023 Mail My Mail. All rights reserved.</p>
-    <ul class="footer-links">
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
-</div>
-</footer>  
+    <div class="footer-content">
+        <p>&copy; 2023 Mail My Mail. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>  
 
 </html>
