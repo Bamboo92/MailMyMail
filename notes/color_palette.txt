@@ -1,0 +1,15 @@
+Text: 
+Black = 130000
+
+Background: 
+White = FFFCF5
+
+Accent Colors:
+White = FFFFFF
+Blue = 00FFEF
+Orange = FF5B00
+
+Blue Colors:
+Dark = 205475
+Mid = 2484A6
+Grayish = 99B4C0
