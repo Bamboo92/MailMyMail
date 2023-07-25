@@ -4,7 +4,7 @@ let links = document.querySelectorAll('#scroll_menu a');
 window.onscroll = () => {
   sec.forEach(section => {
       let top = window.scrollY;
-      let offset = section.offsetTop - 60;
+      let offset = section.offsetTop - 1000;
       let height = section.offsetHeight;
       let id = section.getAttribute('id');
 
@@ -17,16 +17,56 @@ window.onscroll = () => {
   })
 }
 
-links.forEach(link => {
-  link.addEventListener('click', function(e) {
+(function() {
+  function scrollHorizontally(e) {
+      e = window.event || e;
+      var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+      document.getElementById('file_scroll').scrollLeft -= (delta * 20); // Multiplied by 40
       e.preventDefault();
-      let href = this.getAttribute('href');
-      let offsetTop = document.querySelector(href).offsetTop;
-      
-      scroll({
-          top: offsetTop,
-          behavior: "smooth"
-      });
+  }
+  if (document.getElementById('file_scroll').addEventListener) {
+      // IE9, Chrome, Safari, Opera
+      document.getElementById('file_scroll').addEventListener('mousewheel', scrollHorizontally, false);
+      // Firefox
+      document.getElementById('file_scroll').addEventListener('DOMMouseScroll', scrollHorizontally, false);
+  } else {
+      // IE 6/7/8
+      document.getElementById('file_scroll').attachEvent('onmousewheel', scrollHorizontally);
+  }
+})();
+
+// This function checks if the specified event is supported by the browser.
+// Source: http://perfectionkills.com/detecting-event-support-without-browser-sniffing/
+function isEventSupported(eventName) {
+  var el = document.createElement('div');
+  eventName = 'on' + eventName;
+  var isSupported = (eventName in el);
+  if (!isSupported) {
+      el.setAttribute(eventName, 'return;');
+      isSupported = typeof el[eventName] == 'function';
+  }
+  el = null;
+  return isSupported;
+}
+
+$(document).ready(function() {
+  // Check which wheel event is supported. Don't use both as it would fire each event 
+  // in browsers where both events are supported.
+  var wheelEvent = isEventSupported('mousewheel') ? 'mousewheel' : 'wheel';
+
+  // Now bind the event to the desired element
+  $('.Files').on(wheelEvent, function(e) {
+      var oEvent = e.originalEvent,
+          delta  = oEvent.deltaY || oEvent.wheelDelta;
+
+      // deltaY for wheel event
+      // wheelData for mousewheel event
+
+      if (delta > 0) {
+          // Scrolled up
+      } else {
+          // Scrolled down
+      }
   });
 });
 
