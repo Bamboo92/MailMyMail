@@ -38,6 +38,57 @@ window.onscroll = () => {
 
 
 
+
+
+
+
+var files = document.getElementsByClassName('File');
+var flap = document.querySelector('.flap');
+var fileWindow = document.querySelector('.file-view-window');
+
+var isEnvelopeOpen = false; // flag to check the status of envelope
+
+for (var i = 0; i < files.length; i++) {
+    files[i].addEventListener('click', function() {
+        if (isEnvelopeOpen) {
+            closeEnvelope();
+        } else {
+            openEnvelope();
+        }
+    });
+}
+
+function openEnvelope() {
+    flap.classList.remove('flap-close');
+    flap.classList.add('flap-open');
+    fileWindow.classList.remove('file-window-close');
+    fileWindow.classList.add('file-window-open');
+    flap.addEventListener('transitionend', function() {
+        isEnvelopeOpen = true;
+    }, {once: true});
+}
+
+function closeEnvelope() {
+    flap.classList.remove('flap-open');
+    fileWindow.classList.remove('file-window-open');
+    flap.addEventListener('transitionend', function() {
+        isEnvelopeOpen = false;
+        // Make sure the browser has had a chance to actually remove the classes before adding them back
+        setTimeout(function() {
+            flap.classList.add('flap-close');
+            fileWindow.classList.add('file-window-close');
+        }, 0);
+    }, {once: true});
+}
+
+
+
+
+
+
+
+
+
 // This function checks if the specified event is supported by the browser.
 // Source: http://perfectionkills.com/detecting-event-support-without-browser-sniffing/
 function isEventSupported(eventName) {

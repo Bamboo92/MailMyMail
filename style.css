@@ -1,31 +1,61 @@
-body {
-    
-}
 .Envelope {
-    top: 200px;
+    top: 300px;
     width: auto; 
     height: auto; 
     position: relative;
 }
+@keyframes flap-animation {
+    0% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0deg); }
+}
+
+@keyframes file-window-animation {
+    0% { top: 0px; }
+    100% { top: -500px; }
+}
+
 .open_envelope {
     width: auto; 
     height: auto;
-    padding: 0 0px;
-    position: relative;
     align-self: center;
+    align-content: center;
 }
+
 .file-view-window {
-    top: -100px;
-    width: auto;
-    height: auto;
-    background-color: rgb(137, 21, 21);
+    align-self: center;
+    top: 0px; /* The file window starts from behind the envelope */
+    left: 34px;
+    width: 1188px;
+    height: 500px;
+    background-color: rgb(255, 243, 222);
     position: relative;
+    transition: top 0.5s; /* This provides the animation effect */
 }
 .flap {
     position: relative;
-    top: -75px; 
+    top: -575px; 
     align-self: center;
+    transform: rotateX(90deg); /* Starting from 90 so it animates from closed position */
+    transform-origin: bottom; /* This line specifies the bottom of the element as the origin for the rotation */
+    transition: transform 0.8s; /* Ensuring smooth transition */
 }
+
+.flap-open {
+    transform: rotateX(0deg); /* This rotates the flap to an open position */
+}
+
+.file-window-open {
+    top: -500px; /* This moves the file window to a visible position */
+}
+
+.flap-close {
+    transform: rotateX(90deg); /* This rotates the flap to a closed position */
+}
+
+.file-window-close {
+    top: 0px; /* This moves the file window to a closed (hidden) position */
+}
+
 .EnvelopeWindow {
     left: 40px;
     top: 382px;
@@ -46,19 +76,20 @@ body {
 .Files {
     position: relative;
     z-index: 3;
-    width: 397px;
-    height: 190px;
+    width: 397.933px;
+    height: 181px;
     padding-top: 0px;
     padding-bottom: 12px;
     padding-left: 50px;
-    left: 1px;
-    top: 38px;
+    left: 0px;
+    top: 48px;
     position: absolute;
     justify-content: center;
     align-items: flex-start;
     gap: 27px;
     display: inline-flex;
     overflow-y: hidden;
+    border-radius: 0 0 31px 31px;
     -webkit-overflow-scrolling: touch;
 }
 .Files::-webkit-scrollbar {
@@ -98,7 +129,7 @@ fill: #2484a6;
 .DeleteFileIcon {
     position: relative;
     top: 16px;
-    left: 48px;
+    left: 48.5px;
     width: 18px;
     height: 18px;
 }
