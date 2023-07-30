@@ -17,23 +17,26 @@ window.onscroll = () => {
   })
 }
 
+
 (function() {
   function scrollHorizontally(e) {
       e = window.event || e;
-      var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-      document.getElementById('file_scroll').scrollLeft -= (delta * 20); // Multiplied by 40
-      e.preventDefault();
+      var delta = Math.max(-1, Math.min(1, (e.deltaY || -e.detail)));
+      var scrollElement = document.getElementById('file_scroll');
+      if(scrollElement) {
+          scrollElement.scrollLeft -= (delta * 20);
+          e.preventDefault();
+      }
   }
-  if (document.getElementById('file_scroll').addEventListener) {
-      // IE9, Chrome, Safari, Opera
-      document.getElementById('file_scroll').addEventListener('mousewheel', scrollHorizontally, false);
-      // Firefox
-      document.getElementById('file_scroll').addEventListener('DOMMouseScroll', scrollHorizontally, false);
-  } else {
-      // IE 6/7/8
-      document.getElementById('file_scroll').attachEvent('onmousewheel', scrollHorizontally);
+  
+  var scrollElement = document.getElementById('file_scroll');
+  if(scrollElement) {
+      scrollElement.addEventListener('wheel', scrollHorizontally, false);
   }
 })();
+
+
+
 
 // This function checks if the specified event is supported by the browser.
 // Source: http://perfectionkills.com/detecting-event-support-without-browser-sniffing/
