@@ -85,7 +85,31 @@ function closeEnvelope() {
 
 
 
+var inputs = document.querySelectorAll('.input-data input, .textarea textarea');
+for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('input', function() {
+        if (this.value.trim() !== '') {
+            this.classList.add('filled');
+        } else {
+            this.classList.remove('filled');
+        }
+    });
+}
 
+
+
+
+
+// Auto animate for demo
+
+var toggle = document.querySelector('.toggleButton input')
+var animate = setInterval(() => {
+    toggle.checked = !toggle.checked
+}, 3000)
+
+document.querySelector('body').addEventListener('click', () => {
+  clearInterval(animate);
+})
 
 
 

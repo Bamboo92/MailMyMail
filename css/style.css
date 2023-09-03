@@ -2,7 +2,9 @@ html {
     overflow: auto;
     background: #FFFCF5;
 }
-
+/* ============================== Font ============================== */
+/* ============================== Font ============================== */
+/* ============================== Font ============================== */
 @font-face {
     font-family: "Andika";
     src: url("andika/Andika-Regular.ttf") format("truetype"),
@@ -33,7 +35,9 @@ html {
     font-weight: bold;
     font-style: italic;
 }
-
+/* ============================== Scrollbar ============================== */
+/* ============================== Scrollbar ============================== */
+/* ============================== Scrollbar ============================== */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -45,12 +49,16 @@ html {
 border-radius: 40px;
 background: #FF5B00;
 }
-
+/* ============================== Body ============================== */
+/* ============================== Body ============================== */
+/* ============================== Body ============================== */
 body {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
-
+/* ============================== Header ============================== */
+/* ============================== Header ============================== */
+/* ============================== Header ============================== */
 header {
     position: absolute;
     z-index: 10;
@@ -61,12 +69,10 @@ header {
     top: 0;
     font-family: "Andika", Arial, sans-serif;
 }
-
 .header {
     overflow: hidden;
     padding: 30px 25px;
 }
-
 /* Style the header links */
 .header a {
     float: left;
@@ -78,7 +84,6 @@ header {
     line-height: 25px;
     border-radius: 4px;
 }
-
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
     text-align: left;
@@ -86,24 +91,20 @@ header {
     font-size: 50px;
     font-weight: bold;
 }
-
 /* Change the background color on mouse-over */
 .header a:hover {
     background-color: #00FFEF;
     color: #FFFCF5;
 }
-
 /* Style the active/current link*/
 .header a.active {
     background-color: #ff5b00;
     color: white;
 }
-
 /* Float the link section to the right */
 .header-right {
     float: right;
 }
-
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
     header {
@@ -118,8 +119,9 @@ header {
         float: none;
     }
 }
-
-/* Scroll Menu */
+/* ============================== Scroll Menu ============================== */
+/* ============================== Scroll Menu ============================== */
+/* ============================== Scroll Menu ============================== */
 #scroll_menu {
     z-index: 10;
     position: fixed;
@@ -164,7 +166,9 @@ header {
     font-weight: bold;
     color: #FF5B00;
 }
-
+/* ============================== Section ============================== */
+/* ============================== Section ============================== */
+/* ============================== Section ============================== */
 section {
     display: flex;
     height: 101vh;
@@ -182,8 +186,17 @@ section {
     height: 50vh;
     min-height: 50vh;
 }
-
-/* === Wrapper Styles === */
+#envelope_section {
+    height: 1200px;
+    min-height: 1200px;
+}
+#options_section {
+    height: 520px;
+    min-height: 520px;
+}
+/* ============================== Wrapper Styles ============================== */
+/* ============================== Wrapper Styles ============================== */
+/* ============================== Wrapper Styles ============================== */
 #FileUpload {
     display: flex;
     justify-content: center;
@@ -201,7 +214,9 @@ section {
     backdrop-filter: blur(5.7px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
-/* === Upload Box === */
+/* ============================== Upload Box ============================== */
+/* ============================== Upload Box ============================== */
+/* ============================== Upload Box ============================== */
 .upload {
     margin: 10px;
     height: 400px;
@@ -240,8 +255,9 @@ section {
     height: 250px;
     padding: 0px 10px 0px 10px;
 }
-
-/* === Uploaded Files === */
+/* ============================== Uploaded Files ============================== */
+/* ============================== Uploaded Files ============================== */
+/* ============================== Uploaded Files ============================== */
 .uploaded {
   width: 375px;
   margin: 10px;
@@ -343,7 +359,6 @@ h1 {
     width: 30%;
     height: 10%;
 }
-
 #Partner {
     text-align: center;
     font-family: "Andika", Arial, sans-serif;
@@ -361,7 +376,6 @@ h1 {
     align-items: center;
     margin-top: 5%;
 }
-
 #logos img {
     margin: 0 5%; /* Fügt horizontalen Abstand zwischen den Logos hinzu */
     width: 15%;
@@ -369,7 +383,6 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 footer {
     scroll-snap-align: end;
     background: #fffcf5;
@@ -379,456 +392,119 @@ footer {
     font-size: 16px;
     color: #1b1b1b;
 }
-
 .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .footer-links {
     list-style: none;
     padding: 0;
     margin-top: 10px;
 }
-
 .footer-links li {
     display: inline;
 }
-
 .footer-links li:not(:last-child)::after {
     content: "|";
     margin: 0 8px;
 }
-
 .footer-links a {
     color: #1b1b1b;
     text-decoration: none;
 }
-
 .footer-links a:hover {
     color: #ff5b00;
 }
-
-/* === Envelope === */
-/*
-input#flap {
-    display: none;
-}
-
-.envelope-container {
+/* ============================== Envelope ============================== */
+/* ============================== Envelope ============================== */
+/* ============================== Envelope ============================== */
+.Envelope {
+    top: 100px;
+    width: auto; 
+    height: auto; 
     position: relative;
 }
-
-.envelope-back {
-    position: relative;
-    width: 1280px;
-    height: 800px;
-    background-color: #205475;
-    border-radius: 0 0 90px 90px;
+@keyframes flap-animation {
+    0% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0deg); }
 }
 
-.envelope-back:before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.07);
-    width: 1280px;
-    height: 40px;
-    border-radius: 50%;
-    top: 880px;
+@keyframes file-window-animation {
+    0% { top: 0px; }
+    100% { top: -500px; }
 }
-
-.card {
-    position: absolute;
-    width: 1200px;
-    height: 720px;
-    background-color: #00FFEF;
-    top: 40px;
-    left: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-family: Brush Script MT;
-    transition: 0.1s;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 20px 20px 0 ;
-}
-
-.card-front {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 400px solid #205475;
-    border-left: 640px solid transparent;
-    border-right: 640px solid transparent;
-    top: 400px;
-    left: 0;
-    z-index: 3;
-    border-radius: 0 0 90px 90px;
-}
-
-.card-front:before,
-.card-front:after {
-    content: "";
-    position: absolute;
-    border-bottom: 400px solid transparent;
-    border-top: 400px solid transparent;
-    height: 0;
-    width: 0;
-    border-radius: 0 0 90px 90px;
-}
-
-.card-front:before {
-    border-left: 644px solid transparent;
-    border-right: 644px solid #2484a6;
-    top: -400px;
-    left: -648px;
-}
-
-.card-front:after {
-    border-right: 644px solid transparent;
-    border-left: 644px solid #2484a6;
-    top: -400px;
-    left: -640px;
-}
-
-.flap {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 440px solid #99b4c0;
-    border-left: 640px solid transparent;
-    border-right: 640px solid transparent;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    transition: 0.3s;
-    transform-origin: top;
-    z-index: 4;
-}
-
-#flap:checked + .flap {
-    transform: rotateX(180deg);
-    
-}
-
-#flap:checked ~ .card-front {
-    z-index: 7;
-}
-
-#flap:checked ~ .card {
-    z-index: 4;
-    transform: translateY(-90px);
-}
-*/
-/* === Forms === */
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-.container {
-    z-index: 9;
-    margin-top: -550px;
-    background: #ffffff00;
-    width: 1200px;
-    padding: 10px;
-}
-.container .text {
-    text-align: center;
-    font-size: 41px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    background: -webkit-linear-gradient(
-        right,
-        #00FFEF,
-        #FF5B00,
-        #00FFEF,
-        #FF5B00
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.container form {
-    padding: 30px 0 0 0; /* space between form and title*/
-}
-.container form .form-row {
-    display: flex;
-    margin: 40px 0; /* space between rows*/
-}
-form .form-row .input-data {
-    width: 100%;
-    height: 30px;
-    margin: 0px 10px; /* manipulate row leangth */
-    position: relative;
-}
-form .form-row .left-field {
-    bottom: 50px;
-    margin-right: 900px;
-}
-
-form .form-row .right-field {
-    margin-left: -500px;
-}
-form .form-row .textarea {
-    height: 80px;
-}
-.input-data input,
-.textarea textarea {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 25px; /* font size input field */
-    background-color: rgba(0, 0, 0, 0); /* input field color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.313); /* underline color */
-}
-.input-data input:focus ~ label,
-.textarea textarea:focus ~ label,
-.input-data input:valid ~ label,
-.textarea textarea:valid ~ label {
-    transform: translateY(-30px); /* input title hight */
-    font-size: 20px;
-    color: #ff5b00; /* input title color */
-}
-.input-data label {
-    position: absolute;
-    pointer-events: none;
-    bottom: 8px;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    color: #13000071; /*placeholder color*/
-}
-.input-data .underline {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-}
-.input-data .underline:before {
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background: #FF5B00;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
-}
-.input-data input:focus ~ .underline:before,
-.input-data input:valid ~ .underline:before,
-.textarea textarea:focus ~ .underline:before,
-.textarea textarea:valid ~ .underline:before {
-    transform: scale(1);
-}
-.submit-btn .input-data {
-    border-radius: 0px 0px 20px 20px;
-    top: 70px;
-    left: 435px;
-    overflow: hidden;
-    height: 45px !important;
-    width: 25% !important;
-}
-.submit-btn .input-data .inner {
-    height: 100%;
-    width: 300%;
-    position: absolute;
-    left: -100%;
-    background: -webkit-linear-gradient(
-    right,
-    #FF5B00,
-    #FF5B00,
-    #2484A6,
-    #205475
-    );
-    transition: all 0.4s;
-}
-.submit-btn .input-data:hover .inner {
-    left: 0;
-}
-.submit-btn .input-data input {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-}
-@media (max-width: 700px) {
-    .container .text {
-        font-size: 30px;
-    }
-    .container form {
-        padding: 10px 0 0 0;
-    }
-    .container form .form-row {
-        display: block;
-    }
-    form .form-row .input-data {
-        margin: 35px 0 !important;
-    }
-    .submit-btn .input-data {
-        width: 40% !important;
-    }
-}
-
-/* Stil für den Container des Dropdown-Menüs */
-.pac-container {
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter:blur(5.7px);
-    backdrop-filter: blur(5.7px);
-    border: 1px solid #cccccc00;
-    border-radius: 0 0 20px 20px; /* oben-links und oben-rechts sind 0, unten-rechts und unten-links sind 20px */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    font-family: "Andika", Arial, sans-serif;
-    overflow: visible; /* Lässt die Kind-Elemente über den Container hinaus ragen */
-}
-/* Stil für die einzelnen Dropdown-Elemente */
-.pac-item {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-color: transparent;
-    transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Hinzufügen einer Übergangsanimation für border-radius */
-    border-radius: 0; /* Anfangszustand des border-radius */
-}
-/* Stil für die Elemente, wenn Sie mit der Maus darüber fahren */
-.pac-item:hover,
-.pac-item-selected { /* Fügt das gleiche Verhalten für Elemente hinzu, die den Fokus haben */
-    border-radius: 45px;
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter:blur(5.7px);
-    backdrop-filter: blur(5.7px);
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1); /* Vergrößert das Element um 10% */
-    position: relative; /* Wird benötigt, um das Element über anderen zu platzieren */
-    z-index: 1; /* Stellt sicher, dass das Element über anderen liegt */
-}
-/* Stil für die Schriftart des Adresszusatzes (z.B. Land, Bundesland) */
-.pac-item{
-    font-size: 15px;
-    color: #130000;
-}
-/* Stil für die Schriftart des Adresstexts */
-.pac-item-query {
-    font-size: 19px;
-}
-
-
-
-
-
 .open_envelope {
-    width: 1256px; 
-    height: 644px;
-    padding: 0 0px;
-    position: relative;
-    top: 10vh; 
+    width: auto; 
+    height: auto;
     align-self: center;
+    align-content: center;
 }
 .file-view-window {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(137, 21, 21);
+    align-self: center;
+    top: 0px; /* The file window starts from behind the envelope */
+    left: 34px;
+    width: 1188px;
+    height: 500px;
+    background-color: rgb(255, 243, 222);
     position: relative;
+    transition: top 0.5s; /* This provides the animation effect */
 }
 .flap {
     position: relative;
-    top: -75px; 
+    top: -575px; 
     align-self: center;
+    transform: rotateX(90deg); /* Starting from 90 so it animates from closed position */
+    transform-origin: bottom; /* This line specifies the bottom of the element as the origin for the rotation */
+    transition: transform 0.8s; /* Ensuring smooth transition */
 }
-.Envelope {
-    z-index: 1;
-    width: 1256px; 
-    height: 644px;
-    position: relative;
-    top: 10vh; 
-    align-self: center;
-    display: flex;
+.flap-open {
+    transform: rotateX(0deg); /* This rotates the flap to an open position */
+}
+.file-window-open {
+    top: -500px; /* This moves the file window to a visible position */
+}
+.flap-close {
+    transform: rotateX(90deg); /* This rotates the flap to a closed position */
+}
+.file-window-close {
+    top: 0px; /* This moves the file window to a closed (hidden) position */
+}
+.EnvelopeWindow {
+    left: 40px;
+    top: 382px;
+    position: absolute;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
+    display: inline-flex
 }
 .EnvelopeWindowBackground {
-    z-index: 0;
-    position: relative;
-    top: 78.03%; 
-    left: 21%;
-    transform: translate(-50%, -50%);
-    width: 449px; 
-    height: 242px; 
-    background: #A7A7A7; 
-    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.25) inset; 
-    border-radius: 31px;
-}
-.Envelope_front {
-    z-index: 3;
-    width: 1256px; 
-    height: 644px;
-}
-.Postage {
-    position: relative;
-    z-index: 4;
-    top: -600px;
-    left: 600px;
-    width: auto; 
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/images/postage-fill.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #00FFEF;
-}
-.CurrencyEuro {
-    width: 60px; 
-    height: 60px;
-}
-.Price {
-    width: 90px; 
-    height: 30px;
-    padding-top: 10px;
-    text-align: center;
-    color: #205475; 
-    font-size: 20px;
-    font-family: "Andika", Arial, sans-serif;
-    font-weight: bold;
-    word-wrap: break-word;
-}
-.UploadedFiles {
-    z-index: 2;
-    position: relative;
-    top: -10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    width: 449px; 
-    height: 263px;
-    background-color: #00FFEF;
+    width: 448px;
+    height: 241px;
+    background: #A7A7A7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 31px
 }
 .Files {
-    padding-top: 60px;
-    padding-left: 150px;
-    width: 446px; 
-    height: 342px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
+    position: relative;
+    z-index: 3;
+    width: 447.9px;
+    height: 192px;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    left: 0px;
+    top: 48px;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 27px;
+    display: inline-flex;
     overflow-y: hidden;
+    border-radius: 0 0 31px 31px;
     -webkit-overflow-scrolling: touch;
 }
 .Files::-webkit-scrollbar {
@@ -836,55 +512,125 @@ form .form-row .textarea {
     height: 0px;
     background: transparent;
 }
-.Files::-webkit-scrollbar-thumb {
-    border-radius: 15px;
+.File{
+    height: 170.01px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.cls-1_fti {
+fill: #205475;
+}
+.cls-1_fti, .cls-2_fti {
+fill-rule: evenodd;
+}
+.cls-2_fti {
+fill: #2484a6;
+}
+.FileTypeIcon{
+    width: 126.88px;
+    height: 145.01px;
+}
+.cls-1 {
+    fill: #ff5b00;
+}
+.cls-2 {
+    fill: #fff;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+}
+.DeleteFileIcon {
+    position: relative;
+    top: 16px;
+    left: 48.5px;
+    width: 18px;
+    height: 18px;
 }
 .FileName {
-    width: 144px; 
+    width: 145px;
     height: 25px;
-    padding-left: 18px; 
-    padding-right: 3px;
-    justify-content: flex-start; 
-    align-items: flex-start;
-    display: flex;
-    text-align: center; 
-    color: black; 
+    text-align: center;
+    color: black;
     font-size: 16px;
-    font-family: "Andika", Arial, sans-serif;
-    font-weight: 500; 
-    word-wrap: break-word;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word
 }
-.FiletypeIcon {
-    width: 145px; 
-    height: 145px;
+.cls-1_adi {
+    fill: #00ffef;
 }
-.CircleXmarkSolid {
-    width: 18px; 
-    height: 18px;
-    margin-bottom: -22px;
-    margin-left: 118px;
-    position: relative;
-    z-index: 2;
+.cls-1_adi, .cls-2_adi {
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 4px;
 }
-.CircleXmarkSolid:hover {
-    transform: scale(1.5);
+.cls-2_adi {
+    fill: #2484a6;
 }
-.FileCirclePlusSolid {
-    position: relative;
-    margin-top: 35px;
-    margin-left: 400px;
-    width: 34px; 
+.AddFileIcon {
+    width: 34px;
     height: 29px;
+    left: 409px;
+    top: 9px;
+    position: absolute;
 }
-.FileCirclePlusSolid:hover {
-    transform: scale(1.5);
+.EnvelopeContainer {
+    padding: 10px;
+    left: -10px;
+    top: -10px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex
 }
-
-
-
-
-
-
+.Envelope_front {
+    z-index: 2;
+    width: 1256px;
+    height: 644px
+}
+.Postage {
+    z-index: 2;
+    padding-left: 11px;
+    padding-right: 11px;
+    left: 1062px;
+    top: 24px;
+    position: absolute;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex
+}
+.Postage_icon {
+    width: 159.25px;
+    height: 182px;
+}
+.CurrencyIcon {
+    width: 53.78px;
+    height: 54px;
+    left: 63.74px;
+    top: 47px;
+    position: absolute;
+}
+.PriceText {
+    width: 90px;
+    height: 43px;
+    left: 46px;
+    top: 110px;
+    position: absolute;
+    text-align: center;
+    color: #205475;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word
+}
+/* ============================== Form ============================== */
+/* ============================== Form ============================== */
+/* ============================== Form ============================== */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
     margin: 0;
@@ -894,50 +640,46 @@ form .form-row .textarea {
     font-family: "Poppins", sans-serif;
 }
 .form_container {
-    z-index: 4;
+    z-index: 2;
     position: relative;
-    top: -600px; 
-    align-self: center;
-    background: #ffffff00;
-    width: 1200px;
-    padding: 10px;
+    margin-top: -640px;
+    width: 1256px;
 }
-.container .text {
+.form_container .text {
     text-align: center;
     font-size: 41px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     background: -webkit-linear-gradient(
         right,
-        #00FFEF,
-        #FF5B00,
-        #00FFEF,
-        #FF5B00
+        #06283d,
+        #06283d,
+        #2484A6,
+        #36aad4
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.container form {
-    padding: 30px 0 0 0; /* space between form and title */
+.form_container form {
+    padding: 30px 0 0 0; /* space between form and title*/
 }
-.container form .form-row {
+.form_container form .form-row {
     display: flex;
-    margin: 40px 0; /* space between rows */
+    margin: 40px 0; /* space between rows*/
 }
 form .form-row .input-data {
     width: 100%;
     height: 30px;
-    margin: 0px 0px; /* manipulate row leangth */
+    margin: 0px 50px; /* manipulate row leangth */
     position: relative;
 }
 form .form-row .left-field {
-    bottom: 50px;
-    margin-right: 900px;
+    margin-right: 480px;
 }
+
 form .form-row .right-field {
-    top: 300px;
-    left: -70px;
-    margin-left: -600px;
+    top: 350px;
+    margin-left: -200px;
 }
 form .form-row .textarea {
     height: 80px;
@@ -954,8 +696,8 @@ form .form-row .textarea {
 }
 .input-data input:focus ~ label,
 .textarea textarea:focus ~ label,
-.input-data input:valid ~ label,
-.textarea textarea:valid ~ label {
+.input-data input.filled ~ label,
+.textarea textarea.filled ~ label {
     transform: translateY(-30px); /* input title hight */
     font-size: 20px;
     color: #2484A6; /* input title color */
@@ -979,21 +721,21 @@ form .form-row .textarea {
     content: "";
     height: 2px;
     width: 100%;
-    background: #00FFEF;
+    background: #2484A6;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
 }
 .input-data input:focus ~ .underline:before,
-.input-data input:valid ~ .underline:before,
 .textarea textarea:focus ~ .underline:before,
-.textarea textarea:valid ~ .underline:before {
+.input-data input.filled ~ .underline:before,
+.textarea textarea.filled ~ .underline:before {
     transform: scale(1);
 }
 .submit-btn .input-data {
     border-radius: 0px 0px 20px 20px;
-    top: 260px;
-    left: 907px;
+    top: 310px;
+    left: 435px;
     overflow: hidden;
     height: 45px !important;
     width: 25% !important;
@@ -1005,8 +747,8 @@ form .form-row .textarea {
     left: -100%;
     background: -webkit-linear-gradient(
     right,
-    #205475,
-    #205475,
+    #06283d,
+    #1a99c7,
     #2484A6,
     #00FFEF
     );
@@ -1026,15 +768,19 @@ form .form-row .textarea {
     cursor: pointer;
     position: relative;
     z-index: 2;
+    transition: color .8s ease;
+}
+.submit-btn .input-data:hover input {
+    color: #130000;
 }
 @media (max-width: 700px) {
-    .container .text {
+    .form_container .text {
         font-size: 30px;
     }
-    .container form {
+    .form_container form {
         padding: 10px 0 0 0;
     }
-    .container form .form-row {
+    .form_container form .form-row {
         display: block;
     }
     form .form-row .input-data {
@@ -1045,7 +791,7 @@ form .form-row .textarea {
     }
 }
 
-/* Stil für den Container des Dropdown-Menüs */
+/* ============= Stil für den Container des Dropdown-Menüs */
 .pac-container {
     background: rgba(255, 255, 255, 0);
     -webkit-backdrop-filter:blur(5.7px);
@@ -1084,4 +830,381 @@ form .form-row .textarea {
 /* Stil für die Schriftart des Adresstexts */
 .pac-item-query {
     font-size: 19px;
+}
+/* ============================== Options ============================== */
+/* ============================== Options ============================== */
+/* ============================== Options ============================== */
+.Options {
+    width: 1253px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 106px;
+    padding-right: 106px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 118px;
+    display: inline-flex
+}
+.Option {
+    padding-left: 38px;
+    padding-right: 38px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 19px;
+    display: inline-flex
+}
+.OptionIcon {
+    width: 192px;
+    height: 192px;
+    position: relative
+}
+.OptionName {
+    width: 145px;
+    height: 19px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word
+}
+.Send {
+    width: 1350px;
+    height: 121px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    padding-left: 70px;
+    padding-right: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}/*
+.agb_box {
+    width: 298px;
+    height: 33.25px;
+    position: relative
+}
+
+.agb_link_text {
+    width: 300px;
+    left: 42px;
+    top: 2.12px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.agb_checkbox {
+    width: 33px;
+    height: 33.25px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: black
+}*/
+.SubmitButton {
+    width:250px;
+    height:250px;
+    transform: scale(60%);
+}
+/* ============================== Options_Icon_Styles ============================== */
+/* ============================== Options_Icon_Styles ============================== */
+/* ============================== Options_Icon_Styles ============================== */
+/* === color_icon === */
+.ea2afb29-d9b5-4e11-bc43-40738ff33501 {
+    fill: #99b4c0;
+}
+.b920b5e8-f716-4987-86d2-11169bd25dbd {
+    fill: #130000;
+}
+.a78ef945-050c-43af-8755-fbffacbfb491 {
+    fill: #00ffef;
+}
+.e0d2062c-daca-47e0-a82a-12aee8cf090e {
+    fill: #2484a6;
+}
+.b1e3e00d-ea70-44ea-8d78-825ad5583878 {
+    fill: #205475;
+}
+/* === route_icon === */
+.st0{fill:none;stroke:#1A6666;stroke-width:2;}
+.st1{fill:#130000;}
+.st2{fill:#2484A6;}
+.st3{fill:#33CCCC;}
+.st4{fill:#205475;}
+/* === paper_icon === */
+.a191f58e-e67e-460b-bacb-e3eb28fc89af, .a1fc5251-b662-4fb6-8230-413957e37afa, .bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1, .fae21cd3-15df-4c3a-81fa-baea2d97456a {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+.a191f58e-e67e-460b-bacb-e3eb28fc89af {
+    stroke: #130000;
+    stroke-width: 10px;
+}
+.fae21cd3-15df-4c3a-81fa-baea2d97456a {
+    stroke: #205475;
+}
+.a1fc5251-b662-4fb6-8230-413957e37afa, .bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1, .fae21cd3-15df-4c3a-81fa-baea2d97456a {
+    stroke-linecap: round;
+}
+.bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1, .fae21cd3-15df-4c3a-81fa-baea2d97456a {
+    stroke-width: 8px;
+}
+.bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1 {
+    stroke: #2484a6;
+}
+.a1fc5251-b662-4fb6-8230-413957e37afa {
+    stroke: #00ffef;
+    stroke-width: 5.74px;
+}
+.ea920cdb-56fa-47bb-a784-491e5c09bffc {
+    fill: #00ffef;
+}
+
+
+
+
+
+
+
+
+
+@layer properties {
+    @property --checkbox-color-hue {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;
+    }
+    @property --checkbox-color-saturation {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;
+    }
+    @property --checkbox-color-lightness {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;
+    }
+    @property --checkbox-color-light-lightness {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;   
+    }
+    @property --icon-opacity {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;   
+    }
+    @property --icon-invert {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;   
+    }
+    @property --icon-size {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;   
+    }
+    @property --negative-shadow-offset {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;   
+    }
+    @property --text-opacity {
+    syntax:'<number>';
+    inherits: true;
+    initial-value: 0;   
+    }
+}
+
+:root {
+    /* -- Colors: */
+    --body-bg-color: hsl(221deg 16% 12%);
+    --checkbox-color-hue: 216; /* color of the checkbox while not true */
+    --checkbox-color-saturation: 17;
+    --checkbox-color-lightness: 15; 
+    --checkbox-color: hsl(
+        calc(var(--checkbox-color-hue) * 1deg) /**/
+        calc(var(--checkbox-color-saturation) * 1%) /**/
+        calc(var(--checkbox-color-lightness) * 1%) /**/
+    );
+    --checkbox-color-light: rgba(255 255 255 / 32%);
+    --checkbox-color-dark: rgba(0 0 0 / 45%);
+
+    /* -- Box */
+    --checkbox-border-radius: 24%;
+    --checkbox-width: 36;
+    --checkbox-height: 36;
+
+    --text-opacity: 0.6;
+    
+    --negative-shadow-offset: 500;
+    --active-shadow-opacity: 0;
+    
+    /* -- icon */
+    --icon-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' class='feather feather-check'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+    --icon-opacity: 0;
+    --icon-size: 1;
+    
+    /* -- easing */
+    --cubic-bezier: cubic-bezier(0.6, -1.2, 0.2, 2.2);
+
+    /* -- misc */
+    --debug: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    /* debug */
+    outline: calc(var(--debug) * 1px) dashed red;
+}
+
+.agb_checkbox { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: start;
+    grid-gap: .8em;
+    transform: scale(1)
+}
+
+label[for*="checkbox"] {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 8px;
+    
+    /* text settings */
+    color: rgba(19 0 0 / var(--text-opacity));
+    font-size: 1.6em;
+    letter-spacing: .1em;
+    font-weight: 400;
+    
+    transition: --text-opacity .2s ease;
+    
+    &:hover {
+        --text-opacity: 1;
+            &:after {
+                --icon-opacity: .50;
+                --icon-invert: 100;
+                --icon-size: 0.8;
+            }
+
+        input[type="checkbox"] {  
+            --checkbox-color-hue: 216;
+            --checkbox-color-saturation: 14;
+            --checkbox-color-lightness: 18;
+            --checkbox-color: hsl(
+            calc(var(--checkbox-color-hue) * 1deg) 
+            calc(var(--checkbox-color-saturation) * 1%) 
+            calc(var(--checkbox-color-lightness) * 1%) 
+            );
+        }
+    }
+    /* label:after */
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(var(--checkbox-width) * 1px);
+        height: calc(var(--checkbox-height) * 1px);
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 70%;
+        border-radius: var(--checkbox-border-radius);
+        pointer-events: none;
+        background-image: var(--icon-check);
+        filter: invert(100%);
+        opacity: var(--icon-opacity);
+        transform: scale(var(--icon-size));
+        
+        /* here I couldn't animate --icon-invert */
+        transition: opacity .3s ease, filter .3s ease, transform .3s var(--cubic-bezier);
+    }
+    &:has(input[type="checkbox"]:checked) {
+        &:after {
+            --icon-opacity: 1;
+            /* For a reason, this wasn't possible using Scss
+            If anyone wants to break their teeth on it
+            type this in sassmeister.com */
+            /* 
+            div {
+            filter: invert(calc(var(--icon-invert) * 1%));
+            }
+            */
+            filter: invert(0%);
+            
+        }
+    }
+
+    /* label input[type="checkbox"] */
+    & input[type="checkbox"] {
+        appearance: none;
+        cursor: pointer;
+        margin: 0;
+        background: var(--checkbox-color);
+        width: calc(var(--checkbox-width) * 1px);
+        height: calc(var(--checkbox-height) * 1px);
+        border: calc(calc(var(--checkbox-width) / 15) * 1px) solid black;
+        border-radius: var(--checkbox-border-radius);
+        box-shadow:inset 0 0 calc(calc(var(--checkbox-width) / 10) * 1px) rgba(0 0 0 / calc(var(--active-shadow-opacity))), 
+            inset 0 
+            calc(calc(var(--checkbox-width) / 20) * 1px)
+            calc(calc(var(--checkbox-width) / 30) * 1px) 
+            calc(calc(var(--checkbox-width) / var(--negative-shadow-offset)) * -1px)
+            
+            var(--checkbox-color-light),
+            inset 0 calc(calc(var(--checkbox-width) / 20) * -1px)
+            calc(calc(var(--checkbox-width) / 15) * 1px) calc(calc(var(--checkbox-width) / var(--negative-shadow-offset)) * -1px) var(--checkbox-color-dark);
+        transition: --checkbox-color-hue .1s ease,
+                    --checkbox-color-saturation .1s ease,
+                    --checkbox-color-lightness .1s ease,
+                    --checkbox-color 0s ease,
+                    --negative-shadow-offset .2s ease;
+
+        &:active,
+        &:checked {
+            --checkbox-color-hue: 264; 
+            --checkbox-color-saturation: 56; 
+            --checkbox-color-lightness: 49; 
+            --checkbox-color: hsl(
+            calc(var(--checkbox-color-hue) * 1deg) /**/
+            calc(var(--checkbox-color-saturation) * 1%) /**/
+            calc(var(--checkbox-color-lightness) * 1%) /**/
+            );
+        }
+
+        &:checked {
+            --checkbox-color-hue: 265;
+            --checkbox-color-saturation: 80;
+            --checkbox-color-lightness: 61;
+            --checkbox-color: hsl(
+                calc(var(--checkbox-color-hue) * 1deg) 
+                calc(var(--checkbox-color-saturation) * 1%) 
+                calc(var(--checkbox-color-lightness) * 1%) 
+            );
+        }    
+    }
+
+    &:active {
+        --active-shadow-opacity: 0.8;
+        &:after {
+            --icon-size: 0.7;
+        }
+        
+        & input[type="checkbox"] {
+            --negative-shadow-offset: 0;
+        }
+    }
 }

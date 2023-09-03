@@ -1,5 +1,20 @@
+section {
+    display: flex;
+    height: 80vh;
+    /*border-top: 100px solid;*/
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ============================== Envelope ============================== */
+/* ============================== Envelope ============================== */
+/* ============================== Envelope ============================== */
+#envelope {
+}
 .Envelope {
-    top: 300px;
+    top: 0px;
     width: auto; 
     height: auto; 
     position: relative;
@@ -13,14 +28,12 @@
     0% { top: 0px; }
     100% { top: -500px; }
 }
-
 .open_envelope {
     width: auto; 
     height: auto;
     align-self: center;
     align-content: center;
 }
-
 .file-view-window {
     align-self: center;
     top: 0px; /* The file window starts from behind the envelope */
@@ -39,23 +52,18 @@
     transform-origin: bottom; /* This line specifies the bottom of the element as the origin for the rotation */
     transition: transform 0.8s; /* Ensuring smooth transition */
 }
-
 .flap-open {
     transform: rotateX(0deg); /* This rotates the flap to an open position */
 }
-
 .file-window-open {
     top: -500px; /* This moves the file window to a visible position */
 }
-
 .flap-close {
     transform: rotateX(90deg); /* This rotates the flap to a closed position */
 }
-
 .file-window-close {
     top: 0px; /* This moves the file window to a closed (hidden) position */
 }
-
 .EnvelopeWindow {
     left: 40px;
     top: 382px;
@@ -76,8 +84,8 @@
 .Files {
     position: relative;
     z-index: 3;
-    width: 397.933px;
-    height: 181px;
+    width: 447.9px;
+    height: 192px;
     padding-top: 0px;
     padding-bottom: 12px;
     padding-left: 50px;
@@ -213,85 +221,207 @@ fill: #2484a6;
     font-weight: 700;
     word-wrap: break-word
 }
-.Sender {
+/* ============================== Form ============================== */
+/* ============================== Form ============================== */
+/* ============================== Form ============================== */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.form_container {
     z-index: 2;
-    padding-left: 18px;
-    padding-right: 18px;
-    left: 40px;
-    top: 24px;
-    position: absolute; 
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 6px;
-    display: inline-flex
+    position: relative;
+    margin-top: -570px;
+    width: 1256px;
 }
-.SenderName {
-    width: 430px;
-    color: black;
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 500;
-    word-wrap: break-word
+.form_container .text {
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background: -webkit-linear-gradient(
+        right,
+        #00FFEF,
+        #FF5B00,
+        #00FFEF,
+        #FF5B00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.SenderAdress {
-    width: 430px;
-    color: black;
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 500;
-    word-wrap: break-word
+.form_container form {
+    padding: 30px 0 0 0; /* space between form and title*/
 }
-.SenderAdditionalAdressInformation {
-    width: 430px;
-    color: black; 
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 500;
-    word-wrap: break-word
+.form_container form .form-row {
+    display: flex;
+    margin: 40px 0; /* space between rows*/
 }
-.SenderMail {
-    width: 430px;
-    color: black;
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 500;
-    word-wrap: break-word
+form .form-row .input-data {
+    width: 100%;
+    height: 30px;
+    margin: 0px 50px; /* manipulate row leangth */
+    position: relative;
 }
-.Recipient {
-    z-index: 2;
-    padding-left: 18px;
-    padding-right: 18px;
-    left: 656px;
-    top: 428px;
+form .form-row .left-field {
+    margin-right: 480px;
+}
+
+form .form-row .right-field {
+    top: 350px;
+    margin-left: -200px;
+}
+form .form-row .textarea {
+    height: 80px;
+}
+.input-data input,
+.textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 25px; /* font size input field */
+    background-color: rgba(0, 0, 0, 0); /* input field color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.313); /* underline color */
+}
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input.filled ~ label,
+.textarea textarea.filled ~ label {
+    transform: translateY(-30px); /* input title hight */
+    font-size: 20px;
+    color: #2484A6; /* input title color */
+}
+.input-data label {
     position: absolute;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 6px;
-    display: inline-flex
+    pointer-events: none;
+    bottom: 8px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: #13000071; /*placeholder color*/
 }
-.RecipientName {
-    width: 430px;
-    color: black;
-    font-size: 24px;
-    font-family: Inter;
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #2484A6;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.input-data input.filled ~ .underline:before,
+.textarea textarea.filled ~ .underline:before {
+    transform: scale(1);
+}
+.submit-btn .input-data {
+    border-radius: 0px 0px 20px 20px;
+    top: 300px;
+    left: 435px;
+    overflow: hidden;
+    height: 45px !important;
+    width: 25% !important;
+}
+.submit-btn .input-data .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(
+    right,
+    #06283d,
+    #1a99c7,
+    #2484A6,
+    #00FFEF
+    );
+    transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner {
+    left: 0;
+}
+.submit-btn .input-data input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
     font-weight: 500;
-    word-wrap: break-word
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color .8s ease;
 }
-.RecipientAdress {
-    width: 430px;
-    color: black;
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 500;
-    word-wrap: break-word
+.submit-btn .input-data:hover input {
+    color: #130000;
 }
-.RecipientAdditionalAdressInformation {
-    width: 430px;
-    color: black;
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 500;
-    word-wrap: break-word
+@media (max-width: 700px) {
+    .form_container .text {
+        font-size: 30px;
+    }
+    .form_container form {
+        padding: 10px 0 0 0;
+    }
+    .form_container form .form-row {
+        display: block;
+    }
+    form .form-row .input-data {
+        margin: 35px 0 !important;
+    }
+    .submit-btn .input-data {
+        width: 40% !important;
+    }
 }
+
+/* ============= Stil für den Container des Dropdown-Menüs */
+.pac-container {
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter:blur(5.7px);
+    backdrop-filter: blur(5.7px);
+    border: 1px solid #cccccc00;
+    border-radius: 0 0 20px 20px; /* oben-links und oben-rechts sind 0, unten-rechts und unten-links sind 20px */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: "Andika", Arial, sans-serif;
+    overflow: visible; /* Lässt die Kind-Elemente über den Container hinaus ragen */
+}
+/* Stil für die einzelnen Dropdown-Elemente */
+.pac-item {
+    cursor: pointer;
+    padding: 5px 4px;
+    border-color: transparent;
+    transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Hinzufügen einer Übergangsanimation für border-radius */
+    border-radius: 0; /* Anfangszustand des border-radius */
+}
+/* Stil für die Elemente, wenn Sie mit der Maus darüber fahren */
+.pac-item:hover,
+.pac-item-selected { /* Fügt das gleiche Verhalten für Elemente hinzu, die den Fokus haben */
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter:blur(5.7px);
+    backdrop-filter: blur(5.7px);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1); /* Vergrößert das Element um 10% */
+    position: relative; /* Wird benötigt, um das Element über anderen zu platzieren */
+    z-index: 1; /* Stellt sicher, dass das Element über anderen liegt */
+}
+/* Stil für die Schriftart des Adresszusatzes (z.B. Land, Bundesland) */
+.pac-item{
+    font-size: 15px;
+    color: #130000;
+}
+/* Stil für die Schriftart des Adresstexts */
+.pac-item-query {
+    font-size: 19px;
+}
+

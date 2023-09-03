@@ -27,95 +27,117 @@
     <nav id="scroll_menu">
         <a href="#section1" class="active"><span class="text">Section 1</span><span class="circle"></span></a>
     </nav>
-<!--
-    <section id="section1">
 
-        <div class="envelope-container">
-            <input id="flap" type="checkbox">
-            <label class="flap" for="flap"></label>
-            <div class="envelope-back"></div>
-            <div class="card">Thanks!</div>
-            <div class="card-front"></div> 
-        </div>
-
-        <div class="container">
-            <div class="text">
-            
-            </div>
-            <form action="#">
-                <div class="form-row">
-                    <div class="input-data left-field">
-                        <input type="text" required>
-                        <div class="underline"></div>
-                        <label for="">Sender</label>
-                    </div>
-                    <div class="input-data right-field">
-                        <input type="text" required>
-                        <div class="underline"></div>
-                        <label for="">Recipient</label>
-                    </div>
-                </div>
-                <div class="form-row autocomplete-container" id="autocomplete-container">
-                    <div class="input-data left-field">
-                        <input id="autocomplete-input-1" type="text" required>
-                        <div class="underline"></div>
-                        <label for="autocomplete-input-1">Address</label>
-                    </div>
-                    <div class="input-data right-field">
-                        <input id="autocomplete-input-2" type="text" required>
-                        <div class="underline"></div>
-                        <label for="autocomplete-input-2">Address</label>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-data left-field">
-                        <input type="text" required>
-                        <div class="underline"></div>
-                        <label for="">Additional address information </label>
-                    </div>
-                    <div class="input-data right-field">
-                        <input type="text" required>
-                        <div class="underline"></div>
-                        <label for="">Additional address information</label>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-data left-field email">
-                        <input type="text" required>
-                        <div class="underline"></div>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="input-data right-field">
-                    </div>
-                </div>
-                <div class="form-row submit-btn">
-                    <div class="input-data">
-                    <div class="inner"></div>
-                    <input type="submit" value="submit">
-                </div>
-            </form>
-        </div>
-
-    </section>
--->
-    <section>
-        <div class="open_envelope">
-            <div class="file-view-window"></div>
-            <img alt="" class="flap" src="/images/flap.svg"/>
-        </div>
+    <section id="envelope_section">
         <div class="Envelope">
-            <div class="EnvelopeWindowBackground"></div>
-
-            <img class="Envelope_front" src="/images/envelope_front.svg" alt="envelpoe_front">
-
+            <div class="open_envelope">
+                <div class="file-view-window"></div>
+                <svg class="flap" width="1256" height="76" viewBox="0 0 1256 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34 0L0 76H1256L1222 0H34Z" fill="url(#paint0_linear_36_9)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_36_9" x1="702" y1="151.5" x2="763" y2="-344" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#D9D9D9"/>
+                    <stop offset="1" stop-color="#939393"/>
+                    </linearGradient>
+                    </defs>
+                </svg>    
+            </div>
+            <div class="EnvelopeWindow">
+                <div class="EnvelopeWindowBackground"></div>
+                <div class="Files" id="file_scroll">
+                    <div class="File">
+                        <svg class="DeleteFileIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <g id="Layer_1" data-name="Layer 1">
+                            <path class="cls-1" d="M256,512c141.38,0,256-114.62,256-256S397.38,0,256,0,0,114.62,0,256,114.62,512,256,512Z"/>
+                            </g>
+                            <g id="Layer_2" data-name="Layer 2">
+                            <path class="cls-2" d="M175,175a23.9,23.9,0,0,1,33.9,0l47,47,47-47a24,24,0,1,1,33.9,33.9l-47,47,47,47a24,24,0,1,1-33.9,33.9l-47-47-47,47A24,24,0,1,1,175,302.9l47-47-47-47A23.9,23.9,0,0,1,175,175Z"/>
+                            </g>
+                        </svg>                      
+                        <svg class="FileTypeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+                            <g id="Layer_1" data-name="Layer 1">
+                            <path class="cls-1_fti" d="M10.24,12.63a1.38,1.38,0,0,1,.14.49H9.6a.7.7,0,0,0-.09-.24.79.79,0,0,0-.17-.19.7.7,0,0,0-.24-.13.78.78,0,0,0-.3,0,.8.8,0,0,0-.66.3,1.32,1.32,0,0,0-.24.85v.5a1.66,1.66,0,0,0,.1.61.88.88,0,0,0,.3.41.83.83,0,0,0,.52.15,1,1,0,0,0,.46-.1A.68.68,0,0,0,9.55,15a.74.74,0,0,0,.09-.36v-.26H8.82v-.59H10.4v.8a1.68,1.68,0,0,1-.1.55,1.38,1.38,0,0,1-.29.46,1.36,1.36,0,0,1-.5.31,2.1,2.1,0,0,1-.7.11,2,2,0,0,1-.75-.13,1.33,1.33,0,0,1-.53-.38,1.44,1.44,0,0,1-.32-.58,2.65,2.65,0,0,1-.11-.74v-.51a2.18,2.18,0,0,1,.2-.95,1.54,1.54,0,0,1,.58-.63A2,2,0,0,1,9.45,12a1.64,1.64,0,0,1,.48.28,1.35,1.35,0,0,1,.31.4Zm-8.64-.7H0v4H.79V14.58h.8a1.45,1.45,0,0,0,.74-.17,1.29,1.29,0,0,0,.46-.47A1.48,1.48,0,0,0,3,13.26a1.39,1.39,0,0,0-.16-.68,1.18,1.18,0,0,0-.46-.48A1.39,1.39,0,0,0,1.6,11.93Zm.54,1.33a.73.73,0,0,1-.08.38.56.56,0,0,1-.24.24.67.67,0,0,1-.37.08H.79v-1.4h.66a.69.69,0,0,1,.51.18A.7.7,0,0,1,2.14,13.26Zm2,2.66V13.25h0L5.9,15.93h.66v-4H5.81v2.66h0L4,11.93H3.36v4h.75Z"/>
+                            </g>
+                            <g id="Layer_2" data-name="Layer 2">
+                            <path class="cls-2_fti" d="M14,4.5V14a2,2,0,0,1-2,2V15a1,1,0,0,0,1-1V4.5H11A1.5,1.5,0,0,1,9.5,3V1H4A1,1,0,0,0,3,2v9H2V2A2,2,0,0,1,4,0H9.5Z"/>
+                            </g>
+                        </svg>                          
+                        <div class="FileName">file_name.png</div>
+                    </div>
+                    <div class="File">
+                        <svg class="DeleteFileIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <g id="Layer_1" data-name="Layer 1">
+                            <path class="cls-1" d="M256,512c141.38,0,256-114.62,256-256S397.38,0,256,0,0,114.62,0,256,114.62,512,256,512Z"/>
+                            </g>
+                            <g id="Layer_2" data-name="Layer 2">
+                            <path class="cls-2" d="M175,175a23.9,23.9,0,0,1,33.9,0l47,47,47-47a24,24,0,1,1,33.9,33.9l-47,47,47,47a24,24,0,1,1-33.9,33.9l-47-47-47,47A24,24,0,1,1,175,302.9l47-47-47-47A23.9,23.9,0,0,1,175,175Z"/>
+                            </g>
+                        </svg>
+                        <svg class="FileTypeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+                            <g id="Layer_1" data-name="Layer 1">
+                            <path class="cls-1_fti" d="M1.6,11.85H0v4H.79V14.51h.8a1.45,1.45,0,0,0,.74-.18,1.16,1.16,0,0,0,.46-.47A1.45,1.45,0,0,0,3,13.18a1.35,1.35,0,0,0-.16-.67A1.12,1.12,0,0,0,2.33,12,1.39,1.39,0,0,0,1.6,11.85Zm.54,1.33a.71.71,0,0,1-.08.38.51.51,0,0,1-.24.24.78.78,0,0,1-.37.09H.79V12.48h.66a.69.69,0,0,1,.51.18A.71.71,0,0,1,2.14,13.18Zm1.22-1.33v4H4.82a1.9,1.9,0,0,0,1-.24,1.37,1.37,0,0,0,.59-.69,2.54,2.54,0,0,0,.2-1.08,2.54,2.54,0,0,0-.2-1.08,1.42,1.42,0,0,0-.58-.68,2,2,0,0,0-1-.23Zm.79.65h.57a1.15,1.15,0,0,1,.61.15.88.88,0,0,1,.35.45,2,2,0,0,1,.12.75,2.46,2.46,0,0,1-.07.6,1.16,1.16,0,0,1-.2.42.75.75,0,0,1-.33.25,1.16,1.16,0,0,1-.48.08H4.15ZM7.9,14.26v1.59H7.11v-4H9.65v.65H7.9v1.12H9.5v.64Z"/>
+                            </g>
+                            <g id="Layer_2" data-name="Layer 2">
+                            <path class="cls-2_fti" d="M14,4.5V14a2,2,0,0,1-2,2H11V15h1a1,1,0,0,0,1-1V4.5H11A1.5,1.5,0,0,1,9.5,3V1H4A1,1,0,0,0,3,2v9H2V2A2,2,0,0,1,4,0H9.5Z"/>
+                            </g>
+                        </svg>                          
+                        <div class="FileName">that pdf that talks about life.pdf</div>
+                    </div>
+                    <div class="File">
+                        <svg class="DeleteFileIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <g id="Layer_1" data-name="Layer 1">
+                            <path class="cls-1" d="M256,512c141.38,0,256-114.62,256-256S397.38,0,256,0,0,114.62,0,256,114.62,512,256,512Z"/>
+                            </g>
+                            <g id="Layer_2" data-name="Layer 2">
+                            <path class="cls-2" d="M175,175a23.9,23.9,0,0,1,33.9,0l47,47,47-47a24,24,0,1,1,33.9,33.9l-47,47,47,47a24,24,0,1,1-33.9,33.9l-47-47-47,47A24,24,0,1,1,175,302.9l47-47-47-47A23.9,23.9,0,0,1,175,175Z"/>
+                            </g>
+                        </svg>
+                        <svg class="FileTypeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+                            <g id="Layer_1" data-name="Layer 1">
+                            <path class="cls-1_fti" d="M9.66,12.63a1.38,1.38,0,0,1,.14.49H9a.7.7,0,0,0-.09-.24.79.79,0,0,0-.17-.19.7.7,0,0,0-.24-.13.78.78,0,0,0-.3,0,.79.79,0,0,0-.66.3,1.32,1.32,0,0,0-.24.85v.5a1.66,1.66,0,0,0,.1.61.88.88,0,0,0,.3.41.83.83,0,0,0,.52.15,1,1,0,0,0,.46-.1A.68.68,0,0,0,9,15a.74.74,0,0,0,.09-.36v-.26H8.24v-.59H9.82v.8a1.68,1.68,0,0,1-.1.55,1.38,1.38,0,0,1-.29.46,1.36,1.36,0,0,1-.5.31,2.1,2.1,0,0,1-.7.11,2,2,0,0,1-.75-.13A1.33,1.33,0,0,1,7,15.49a1.44,1.44,0,0,1-.32-.58,2.65,2.65,0,0,1-.11-.74v-.51a2.18,2.18,0,0,1,.2-.95,1.54,1.54,0,0,1,.58-.63,1.83,1.83,0,0,1,.93-.23,1.83,1.83,0,0,1,.64.1,1.64,1.64,0,0,1,.48.28,1.35,1.35,0,0,1,.31.4ZM0,14.79a1.39,1.39,0,0,0,.08.46,1.28,1.28,0,0,0,.24.39,1.46,1.46,0,0,0,.41.27A1.7,1.7,0,0,0,1.3,16a1.37,1.37,0,0,0,1-.34,1.38,1.38,0,0,0,.35-1V11.93H1.85v2.74a.68.68,0,0,1-.14.47.51.51,0,0,1-.42.16.48.48,0,0,1-.45-.25.5.5,0,0,1-.07-.27H0Zm4.92-2.86H3.32v4h.79V14.58h.81a1.41,1.41,0,0,0,.73-.17,1.16,1.16,0,0,0,.46-.47,1.42,1.42,0,0,0,.16-.68,1.39,1.39,0,0,0-.16-.68,1.18,1.18,0,0,0-.46-.48,1.39,1.39,0,0,0-.73-.17Zm.55,1.33a.85.85,0,0,1-.09.38.56.56,0,0,1-.24.24.67.67,0,0,1-.37.08H4.11v-1.4h.66a.69.69,0,0,1,.51.18.67.67,0,0,1,.19.52Z"/>
+                            </g>
+                            <g id="Layer_2" data-name="Layer 2">
+                            <path class="cls-2_fti" d="M14,4.5V14a2,2,0,0,1-2,2H11V15h1a1,1,0,0,0,1-1V4.5H11A1.5,1.5,0,0,1,9.5,3V1H4A1,1,0,0,0,3,2v9H2V2A2,2,0,0,1,4,0H9.5Z"/>
+                            </g>
+                        </svg>                          
+                        <div class="FileName">a very very long name ultra long long name.jpg</div>
+                    </div>
+                </div>
+                <svg class="AddFileIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 518.83">
+                    <g id="Layer_1" data-name="Layer 1">
+                    <path class="cls-1_adi" d="M432,224A144,144,0,1,1,288,368,144,144,0,0,1,432,224Zm16,80a16,16,0,0,0-32,0v48H368a16,16,0,0,0,0,32h48v48a16,16,0,0,0,32,0V384h48a16,16,0,0,0,0-32H448Z" transform="translate(2 4.83)"/>
+                    </g>
+                    <g id="Layer_2" data-name="Layer 2">
+                    <path class="cls-2_adi" d="M0,64A64.06,64.06,0,0,1,64,0H224V128a32,32,0,0,0,32,32H384v38.6a176.12,176.12,0,0,0-54.3,312.7,62.41,62.41,0,0,1-9.7.7H64A64.06,64.06,0,0,1,0,448Z" transform="translate(2 4.83)"/>
+                    <polygon class="cls-2_adi" points="386 132.83 258 132.83 258 4.83 386 132.83"/>
+                    </g>
+                </svg>                  
+            </div>
+            <div class="EnvelopeContainer">
+                <svg class="Envelope_front" width="1256" height="644" viewBox="0 0 1256 644" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1256 0H0V644H1256V0ZM71 382C53.8792 382 40 395.879 40 413V592C40 609.121 53.8792 623 71 623H457C474.121 623 488 609.121 488 592V413C488 395.879 474.121 382 457 382H71Z" fill="url(#paint0_linear_6_40)"/>
+                    <defs>
+                        <linearGradient id="paint0_linear_6_40" x1="0" y1="644" x2="1288.81" y2="74.2096" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white"/>
+                        <stop offset="0.56812" stop-color="#A4A4A4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>                
+            </div>
             <div class="Postage">
-                <img class="CurrencyEuro" src="/images/CurrencyEuro.svg" alt="CurrencyEuro">
-                <div class="Price">PRICE</div>
+                <svg class="Postage_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2484A6" class="bi bi-postage-fill" viewBox="0 0 16 16">
+                    <path d="M4.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-7Z"/>
+                    <path d="M3.5 1a1 1 0 0 0 1-1h1a1 1 0 0 0 2 0h1a1 1 0 0 0 2 0h1a1 1 0 1 0 2 0H15v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1h-1.5a1 1 0 1 0-2 0h-1a1 1 0 1 0-2 0h-1a1 1 0 1 0-2 0h-1a1 1 0 1 0-2 0H1v-1a1 1 0 1 0 0-2v-1a1 1 0 1 0 0-2V9a1 1 0 1 0 0-2V6a1 1 0 0 0 0-2V3a1 1 0 0 0 0-2V0h1.5a1 1 0 0 0 1 1ZM3 3v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z"/>
+                </svg>
+                <svg class="CurrencyIcon" fill="none" stroke="#205475" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 100 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div class="PriceText">PRICE</div>
             </div>
 
             <div class="form_container">
                 <div class="text">
-                
+                    Bla Bli Blub
                 </div>
                 <form action="#">
                     <div class="form-row">
@@ -170,35 +192,128 @@
                     </div>
                 </form>
             </div>
-
-            <div class="UploadedFiles">
-                <img type="button" class="FileCirclePlusSolid" src="/images/file-circle-plus-solid.svg" alt="FileCirclePlusSolid">
-                <div class="Files" id="file_scroll">
-                    <div class="FiletypeIcon">
-                        <img type="button" class="CircleXmarkSolid" src="/images/circle-xmark-solid.svg" alt="CircleXmarkSolid">
-                        <img class="FiletypeIcon" src="/images/filetype-png.svg" alt="FiletypeJpg">
-                        <div class="FileName">file_name.png</div>
-                    </div>
-                    <div class="FiletypeIcon">
-                        <img type="button" class="CircleXmarkSolid" src="/images/circle-xmark-solid.svg" alt="CircleXmarkSolid">
-                        <img class="FiletypeIcon" src="/images/filetype-pdf.svg" alt="FiletypeJpg">
-                        <div class="FileName">file_name.png</div>
-                    </div>
-                    <div class="FiletypeIcon">
-                        <img type="button" class="CircleXmarkSolid" src="/images/circle-xmark-solid.svg" alt="CircleXmarkSolid">
-                        <img class="FiletypeIcon" src="/images/filetype-jpg.svg" alt="FiletypeJpg">
-                        <div class="FileName">file_name.png</div>
-                    </div>
-                    <div class="FiletypeIcon">
-                        <img type="button" class="CircleXmarkSolid" src="/images/circle-xmark-solid.svg" alt="CircleXmarkSolid">
-                        <img class="FiletypeIcon" src="/images/filetype-jpg.svg" alt="FiletypeJpg">
-                        <div class="FileName">file_name.png</div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
+
+
+    <section id="options_section">
+        <div class="Options">
+            <div class="Option">
+                <svg class="OptionIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <g id="e6fd1e5b-0026-400d-8cc4-e51dba0712b3" data-name="Layer 1">
+                    <path class="ea2afb29-d9b5-4e11-bc43-40738ff33501" d="M6,13a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,6,13Z"/>
+                    <path class="b920b5e8-f716-4987-86d2-11169bd25dbd" d="M16,8c0,3.15-1.87,2.59-3.57,2.07-1-.31-2-.6-2.43-.07-.6.68-.48,1.82-.35,2.92C9.83,14.49,10,16,8,16a8,8,0,1,1,8-8ZM8,15c.61,0,.65-.17.65-.18a2.2,2.2,0,0,0,.07-1.12c0-.16,0-.36-.06-.59a14.34,14.34,0,0,1-.11-1.46,3.32,3.32,0,0,1,.7-2.31,1.89,1.89,0,0,1,1.27-.62,4,4,0,0,1,1.16.1c.35.08.7.19,1,.29h0c.35.1.66.2,1,.26.65.15.9.09,1,0S15,9.16,15,8a7,7,0,1,0-7,7Z"/>
+                    </g>
+                    <g id="b98d0633-0a6f-412f-9cd5-fdf87e381bca" data-name="Layer 5">
+                    <circle class="a78ef945-050c-43af-8755-fbffacbfb491" cx="12" cy="6.5" r="1.5"/>
+                    </g>
+                    <g id="b0c5fc43-17fd-4f09-83a1-d69aa7092d22" data-name="Layer 3">
+                    <circle class="e0d2062c-daca-47e0-a82a-12aee8cf090e" cx="4" cy="7" r="1.5"/>
+                    </g>
+                    <g id="f4106105-93ba-4085-aee3-d020c5883e66" data-name="Layer 2">
+                    <circle class="b1e3e00d-ea70-44ea-8d78-825ad5583878" cx="8" cy="3.5" r="1.5"/>
+                    </g>
+                </svg>                      
+                <div class="OptionName">fun.jpg</div>
+            </div>
+            <div class="Option">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="OptionIcon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" xml:space="preserve">
+                    <path vector-effect="non-scaling-stroke" class="st0" d="M182.7,80.2l-0.1,22"/>
+                    <path vector-effect="non-scaling-stroke" class="st0" d="M131,22.2c-7.4-0.5-14.8-0.4-22.2,0.1"/>
+                    <path vector-effect="non-scaling-stroke" class="st0" d="M73.5,22.2c-7.3-0.4-14.7-0.4-22,0"/>
+                    <path vector-effect="non-scaling-stroke" class="st0" d="M341.5,458.2c-3,7.2-3,14.5,0,22"/>
+                    <path vector-effect="non-scaling-stroke" class="st0" d="M472.1,431.7L457,451"/>
+                    <path vector-effect="non-scaling-stroke" class="st0" d="M394.2,451.2l-15.1-19.4"/>
+                    </g>
+                    <path class="st1" d="M10.1,0h162.5c6.6,1.4,9.9,5.6,9.9,12.5c-0.1,22.6,0,45.1,0.2,67.7l-0.1,22c-0.1,21.5-0.1,42.9,0,64.4
+                        c0,13.2-4.1,15.9-17.3,15.9c-51.1,0-102.1,0-153.2,0c-6.8,0-10.8-3.4-12-10.3V9.9C1,4.3,4.4,1,10.1,0z M131,22.2
+                        c-7.4-0.5-14.8-0.4-22.2,0.1l-0.1-0.2c0,0,0,0-0.1,0l-35.1,0.2c-7.3-0.4-14.7-0.4-22,0l-28.9-0.1c-0.4,0-0.6,0.2-0.6,0.6V160
+                        c0,0.3,0.2,0.5,0.5,0.5h137.2c0.4,0,0.7-0.3,0.7-0.8l0,0v-137c0-0.4-0.2-0.6-0.6-0.6C150.2,21.8,140.6,21.8,131,22.2z"/>
+                    <path class="st2" d="M73.5,22.2l0,33.8c0,0.4,0.2,0.6,0.6,0.3c3.6-2,7-4.1,10.4-6.3c8.5-5.6,16.8,2,23.7,6.4
+                        c0.2,0.1,0.5,0.1,0.6-0.1c0-0.1,0.1-0.2,0.1-0.2l-0.2-33.8c7.4-0.6,14.8-0.6,22.2-0.1c-0.3,17.6-0.3,35.2-0.2,52.8
+                        c0.1,11.7-9.7,15.2-18.9,9.5c-6.7-4.2-13.4-8.3-20.2-12.5c-0.3-0.2-0.6-0.2-0.9,0c-7.4,4.5-14.8,9.1-22.2,13.6
+                        c-8.2,5-17.1-0.7-17.1-10.1c-0.1-7.2-0.1-24.9,0-53.2C58.9,21.8,66.2,21.8,73.5,22.2z"/>
+                    <path class="st3" d="M182.7,80.2c54.8,0,109.5,0,164.1,0c13,0,25.3,2.8,37,8.5c38.9,18.8,51.9,67,33.8,104.5
+                        c-14.8,30.8-43.8,42.5-76.6,42.5c-76.9,0-153.8,0-230.8,0c-7.8,0-13.3,0.5-16.7,1.5c-28.9,8.7-26.1,51.8,4.4,57.3
+                        c2.9,0.5,6.9,0.6,10.1,0.6c39.9,0,79.8,0,119.7,0c64.3,0,72.2,91.4,9.7,102.5c-4.1,0.7-9.3,1-14.1,1c-41.4,0-82.8,0-124.2,0
+                        c-6.1,0-10.7,0.5-13.8,1.4c-31.2,9.1-26.4,55.5,6.7,57.8c3.1,0.2,5.7,0.3,7.9,0.3c45.3,0.1,125.8,0,241.5-0.1c-3,7.2-3,14.5,0,22
+                        c-5-0.5-11.5,0-15,0c-72.9,0-145.8,0-218.7,0c-6.9,0-14.9,0.1-21.2-0.9c-56.8-8.6-59.3-89.9-3.6-101.3c4.1-0.8,10.8-1.3,19.9-1.3
+                        c41.8,0,83.6,0,125.4-0.1c34.1,0,41.7-47.9,10.2-57.9c-3.2-1-9.1-1.6-17.5-1.6c-37-0.2-74.1-0.3-111.1-0.3c-8.8,0-15.2-0.5-19.3-1.4
+                        c-58.9-13.8-49-101.8,13.5-101.8c80.1,0,160.2,0,240.3,0c27,0,49.4-13.4,57.1-39.8c10.3-35.6-15.3-71.7-52.8-71.7
+                        c-55.4,0-110.8,0-166.2,0L182.7,80.2z"/>
+                    <path class="st4" d="M472.1,431.7L457,451c-3.3,3.6-6.6,7.3-9.8,11c-9.1,10.8-22.2,15.4-34.7,7.8c-6.3-3.9-12.6-12.3-18.3-18.6
+                        l-15.1-19.4c-10.5-13.9-20.7-27.9-27.9-43.8c-19.1-42-10.4-95.7,32.8-119.3c42.1-22.9,98.5-7.3,118,38
+                        C522,353.4,500.7,395.3,472.1,431.7z M487.6,346c1.1-32.5-18.5-59.1-51.3-64.9c-20.5-3.6-42.8,3.4-56.9,18.9
+                        c-21.5,23.7-19.2,59.2-4.9,85.7c2.9,5.4,6.7,11.5,11.4,18.1c11.9,16.8,24.1,32.1,36.6,45.9c2.1,2.3,4.1,2.3,6.1,0
+                        c14-15.4,26.8-31.7,38.6-48.9C478.8,384.3,486.9,366.4,487.6,346z"/>
+                    <path class="st2" d="M464.6,342.9c-0.5,21.6-18.4,38.7-40,38.2c-21.6-0.5-38.7-18.4-38.2-39.9c0.5-21.6,18.4-38.7,40-38.2
+                        C448,303.4,465.1,321.3,464.6,342.9z M442.7,342c0-9.5-7.7-17.1-17.1-17.1c0,0,0,0,0,0c-9.5,0-17.1,7.7-17.1,17.1
+                        s7.7,17.1,17.1,17.1S442.7,351.4,442.7,342C442.7,342,442.7,342,442.7,342z"/>
+                    <path class="st1" d="M379.1,431.9l15.1,19.4c-5.1,0.9-42.3,10.8-30.9,22c22.9,22.4,104.2,22.9,125.1-0.9c7.2-8.2-16.2-17-20.8-18.3
+                        c-3.5-1-7.1-2-10.6-3l15.1-19.2c4.1,1.7,8.1,3.3,12,4.8c13.9,5.3,26.7,16.1,28,31.5v2.5c-3.7,33.4-57.3,40.7-82.6,41.4h-8.2
+                        c-26.7-1.1-64.5-6.4-79.7-31.8c-3-7.5-3-14.8,0-22c4.3-8.1,10.6-14.3,19-18.5C367.2,436.3,373.4,433.7,379.1,431.9z"/>
+                </svg>                
+                <div class="OptionName">fun.jpg</div>
+            </div>
+            <div class="Option">
+                <svg class="OptionIcon" id="f2f9b614-c29e-46fb-beb9-220083af53bc" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="187.15" height="206.67" viewBox="0 0 187.15 206.67">
+                    <rect class="a191f58e-e67e-460b-bacb-e3eb28fc89af" x="28.7" y="6.31" width="126.87" height="186.58" rx="1.14"/>
+                    <line class="fae21cd3-15df-4c3a-81fa-baea2d97456a" x1="43.63" y1="60.28" x2="79.8" y2="60.28"/>
+                    <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.06" y1="149.83" x2="137.21" y2="149.83"/>
+                    <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.63" y1="119.41" x2="137.21" y2="119.41"/>
+                    <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.43" y1="134.49" x2="137.21" y2="134.49"/>
+                    <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="44" y1="104.06" x2="137.21" y2="104.06"/>
+                    <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.06" y1="165.34" x2="137.21" y2="165.34"/>
+                    <g>
+                    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="9.76" y1="75.78" x2="9.76" y2="90.13"/>
+                    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="2.87" y1="82.67" x2="17.22" y2="82.67"/>
+                    </g>
+                    <g>
+                    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="148.09" y1="178.82" x2="148.09" y2="193.17"/>
+                    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="141.21" y1="185.71" x2="155.56" y2="185.71"/>
+                    </g>
+                    <g>
+                    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="176.82" y1="2.87" x2="176.82" y2="17.22"/>
+                    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="169.93" y1="9.76" x2="184.28" y2="9.76"/>
+                    </g>
+                    <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="122.28" cy="204.37" r="2.3"/>
+                    <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="165.91" cy="24.69" r="2.3"/>
+                    <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="19.24" cy="98.17" r="2.3"/>
+                    <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="155.11" cy="172.02" r="2.3"/>
+                </svg>                  
+                <div class="OptionName">fun.jpg</div>
+            </div>
+        </div>
+        <div class="Send">
+            <div class="agb_box">
+                <div class="agb_checkbox">
+                    <label for="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" name="checkbox-1"/>
+                    AGB / Seele verkaufen
+                    </label>
+                </div>
+                <!--<a class="agb_link_text">AGB / Seele verkaufen</a>-->
+            </div>
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <lord-icon class="SubmitButton" 
+                src="https://cdn.lordicon.com/gzmgulpl.json"
+                trigger="hover"
+                colors="outline:#130000,primary:#4bb3fd,secondary:#ebe6ef"
+            </lord-icon>
+        </div>    
+    </section>
+    <!--
+    <section>
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/gzmgulpl.json"
+    trigger="hover"
+    colors="outline:#130000,primary:#4bb3fd,secondary:#ebe6ef"
+    style="width:250px;height:250px">
+</lord-icon>
+    </section>-->
 
 
     <script src="/js/script.js"></script>
@@ -211,6 +326,7 @@
                 <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <li><a href="https://lordicon.com/">Icons by Lordicon.com</a></li>
             </ul>
         </div>
     </footer>
@@ -218,4 +334,3 @@
 </body>  
 
 </html>
-

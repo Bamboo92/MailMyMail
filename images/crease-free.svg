@@ -1,0 +1,63 @@
+<svg id="f2f9b614-c29e-46fb-beb9-220083af53bc" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="187.15" height="206.67" viewBox="0 0 187.15 206.67">
+  <defs>
+    <style>
+      .a191f58e-e67e-460b-bacb-e3eb28fc89af, .a1fc5251-b662-4fb6-8230-413957e37afa, .bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1, .fae21cd3-15df-4c3a-81fa-baea2d97456a {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .a191f58e-e67e-460b-bacb-e3eb28fc89af {
+        stroke: #130000;
+        stroke-width: 10px;
+      }
+
+      .fae21cd3-15df-4c3a-81fa-baea2d97456a {
+        stroke: #205475;
+      }
+
+      .a1fc5251-b662-4fb6-8230-413957e37afa, .bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1, .fae21cd3-15df-4c3a-81fa-baea2d97456a {
+        stroke-linecap: round;
+      }
+
+      .bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1, .fae21cd3-15df-4c3a-81fa-baea2d97456a {
+        stroke-width: 8px;
+      }
+
+      .bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1 {
+        stroke: #2484a6;
+      }
+
+      .a1fc5251-b662-4fb6-8230-413957e37afa {
+        stroke: #00ffef;
+        stroke-width: 5.74px;
+      }
+
+      .ea920cdb-56fa-47bb-a784-491e5c09bffc {
+        fill: #00ffef;
+      }
+    </style>
+  </defs>
+  <rect class="a191f58e-e67e-460b-bacb-e3eb28fc89af" x="28.7" y="6.31" width="126.87" height="186.58" rx="1.14"/>
+  <line class="fae21cd3-15df-4c3a-81fa-baea2d97456a" x1="43.63" y1="60.28" x2="79.8" y2="60.28"/>
+  <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.06" y1="149.83" x2="137.21" y2="149.83"/>
+  <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.63" y1="119.41" x2="137.21" y2="119.41"/>
+  <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.43" y1="134.49" x2="137.21" y2="134.49"/>
+  <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="44" y1="104.06" x2="137.21" y2="104.06"/>
+  <line class="bd5fc056-1d73-41b2-8a2f-5eac8d4e6eb1" x1="43.06" y1="165.34" x2="137.21" y2="165.34"/>
+  <g>
+    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="9.76" y1="75.78" x2="9.76" y2="90.13"/>
+    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="2.87" y1="82.67" x2="17.22" y2="82.67"/>
+  </g>
+  <g>
+    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="148.09" y1="178.82" x2="148.09" y2="193.17"/>
+    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="141.21" y1="185.71" x2="155.56" y2="185.71"/>
+  </g>
+  <g>
+    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="176.82" y1="2.87" x2="176.82" y2="17.22"/>
+    <line class="a1fc5251-b662-4fb6-8230-413957e37afa" x1="169.93" y1="9.76" x2="184.28" y2="9.76"/>
+  </g>
+  <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="122.28" cy="204.37" r="2.3"/>
+  <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="165.91" cy="24.69" r="2.3"/>
+  <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="19.24" cy="98.17" r="2.3"/>
+  <circle class="ea920cdb-56fa-47bb-a784-491e5c09bffc" cx="155.11" cy="172.02" r="2.3"/>
+</svg>
